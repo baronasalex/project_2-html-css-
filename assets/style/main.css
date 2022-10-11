@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+html, body {
+    background-color: rgba(243, 242, 188, 0.809);
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 10px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+header > img {
+    width: 100px;
+    height: auto;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;   
+    transition: color .4s ease-in-out;
+}
+
+header > nav > ul > li > a:hover {
+    color: rgb(190, 106, 3);
+}
+
+main {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid rgba(249, 249, 249, 0.809);
+    border-radius: 10px 10px 0 0 ;
+    padding: 10px 0;
+}
+
+main > .info {
+    flex-basis: 45%;
+}
+
+main >.info > h1 {
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+main > .info > button {
+    border-radius: 30px;
+    background-image: linear-gradient(to top, rgb(247, 222, 191),  rgb(234, 176, 105));
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+main > .img {
+    flex-basis: 25%;
+}
+
+main >.image > img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section > article {
+    border: 2px solid rgba(249, 249, 249, 0.809);
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 10px 10px;
+    padding: 15px;
+}
+
+section > article:last-child{
+    border-right: 2px solid rgba(249, 249, 249, 0.809);
+}
+
+section > article > h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+section > article > div {
+    font-size: 16px;
+    color: #222;
+    animation: opac 1s;
+
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
